@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(239, 204, 158);
+  font-family: "Bodoni Moda", serif;
+}
+header {
+  background: linear-gradient(to left, grey, lightgrey);
+  padding: 0.7rem 0;
+  box-shadow: 0 0.4rem 1rem #797676;
+  position: relative;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+}
+.contenedor {
+  max-width: 960px;
+  margin: auto;
+}
+.bloque h1 {
+  margin: 0px;
+  text-align: center;
+  font-size: 80px;
+  color: goldenrod;
+  line-height: 500px;
+}
+.bloque h2 {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+.bloque p {
+  font-size: 20px;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+.bloque.parallax {
+  height: 750px;
+  background-position: 50% 50%; /*eje x eje y*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.parallax.mostrador1 {
+  background-image: url(../imagenes/BlancoDorado.JPG);
+}
+.parallax.mostrador2 {
+  background-image: url(../imagenes/Golden.JPG);
+}
+.parallax.mostrador3 {
+  background-image: url(../imagenes/SeoulBlanco.JPG);
+}
+.medidas {
+  text-decoration: overline;
+}
