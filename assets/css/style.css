@@ -19,6 +19,9 @@ header {
   z-index: 1;
   text-align: center;
 }
+.header.navbar {
+  display: flex;
+}
 .contenedor {
   max-width: 960px;
   margin: auto;
@@ -47,7 +50,7 @@ header {
   background-attachment: fixed;
 }
 .parallax.mostrador1 {
-  background-image: url(../imagenes/BlancoDorado.JPG);
+  background-image: url(../imagenes/BlancoDorado3.JPG);
 }
 .parallax.mostrador2 {
   background-image: url(../imagenes/Golden.JPG);
