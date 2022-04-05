@@ -7,32 +7,95 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   background-color: rgb(239, 204, 158);
   font-family: "Bodoni Moda", serif;
 }
-header {
-  background: linear-gradient(to left, grey, lightgrey);
-  padding: 0.7rem 0;
-  box-shadow: 0 0.4rem 1rem #797676;
-  position: relative;
-  top: 0;
-  z-index: 1;
+img {
+  max-width: 100%;
+}
+img,
+svg {
+  vertical-align: middle;
+}
+.header {
   text-align: center;
-}
-.header.navbar {
   display: flex;
+
+  width: 100%;
+  background: linear-gradient(to left, grey, lightgrey);
+  box-shadow: 0 0.9rem 1rem #797676;
 }
+.logo {
+  display: inline-table;
+  width: 20%;
+  padding: 20px;
+  vertical-align: middle;
+}
+.logo-inner {
+  width: 200px;
+  height: 200px;
+  background: #444;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  cursor: default;
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+.menu {
+  vertical-align: middle;
+  text-align: right;
+}
+.menu-inner {
+  padding: 0;
+  margin: 0 20px;
+  list-style: none;
+
+  border-radius: 5px;
+  overflow: hidden;
+  display: none;
+  vertical-align: middle;
+  justify-content: space-around;
+}
+.menu-item + .menu-item {
+  border-left: 1px solid #bbb;
+}
+.menu-link {
+  display: block;
+  padding: 20px 30px;
+  background: #888;
+  color: whitesmoke;
+  text-decoration: none;
+}
+.menu-link:hover {
+  background: rgb(27, 27, 27);
+}
+
 .contenedor {
-  max-width: 960px;
-  margin: auto;
+  max-width: 100%;
+  margin: 0 auto;
 }
 .bloque h1 {
   margin: 0px;
-  text-align: center;
-  font-size: 80px;
+  text-align: justify;
+  font-size: 50px;
+
   color: goldenrod;
-  line-height: 500px;
+
+  top: 25%;
+  left: 0;
+  position: relative;
+  width: 70%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
+
 .bloque h2 {
   font-size: 24px;
   margin-bottom: 50px;
@@ -60,4 +123,21 @@ header {
 }
 .medidas {
   text-decoration: overline;
+}
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+  .menu-inner {
+    display: flex;
+    width: 100%;
+  }
+  .menu-item {
+    display: inline-flex;
+  }
+  .bloque h1 {
+    align-items: end;
+    font-size: 80px;
+  }
 }

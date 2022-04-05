@@ -1,5 +1,5 @@
 let metodoPago = prompt(
-  "Le calcularemos su descuento segun su metodo de pago. Ingrese aqui su metodo de pago:"
+  "Le calcularemos su descuento segun su metodo de pago. Ingrese aqui su metodo de pago: (efectivo, transferencia, tarjeta de credito)"
 ).toLowerCase();
 
 function tipoPago() {
