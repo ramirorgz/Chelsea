@@ -1,50 +1,41 @@
-let metodoPago = prompt(
-  "Le calcularemos su descuento segun su metodo de pago. Ingrese aqui su metodo de pago: (efectivo, transferencia, tarjeta de credito)"
-).toLowerCase();
+//VARIABLES GLOBALES
+let producto = prompt("Cual es el nombre del producto?");
+let precio = parseFloat(prompt("Cual es el precio del producto?"));
+const desc1 = (precio * 15) / 100;
+const desc2 = (precio * 10) / 100;
 
-function tipoPago() {
-  if (metodoPago === "efectivo") {
-    console.log("Tu descuento sera del 15%!");
-  } else if (metodoPago === "transferencia") {
-    console.log("Tu descuento sera del 10%!");
-  } else if (metodoPago === "tarjeta de credito") {
-    console.log("Puede pagar hasta 6 cuotas!");
-  } else {
-    console.log("No trabajamos ese metodo de pago! Lo sentimos.");
-    alert("No trabajamos ese metodo de pago! Lo sentimos.");
+//VARIABLES QUE NOS INDICA EL USUARIO
+
+if (isNaN(precio)) {
+  alert("por favor indicar el precio producto. ");
+  let precio = parseFloat(prompt("Cual es el precio del producto?"));
+} else {
+  console.log(`El precio final es de $${precio - desc1}, por pago en efectivo`);
+  console.log(
+    `El precio final es de $${precio - desc2}, por pago en transferencia`
+  );
+  console.log(`El precio es $${precio} y puedes pagar hasta en 6 cuotas`);
+}
+
+//CREANDO UN ARRAY DE PRODUCTOS
+class Producto {
+  constructor(nombre, precio) {
+    this.nombre = nombre;
+    this.precio = precio;
   }
 }
-tipoPago();
+let mostradoresLista = [];
 
-/* switch (metodoPago) {
-  case "Efectivo".toLowerCase:
-    console.log("Su descuento sería del 15%!");
-    break;
-  case "Transferencia".toLowerCase:
-    console.log("Su descuento sería del 10%!");
-    break;
-  case "Tarjeta de credito".toLowerCase:
-    console.log("Tiene hasta 6 cuotas!");
-    break;
-  default:
-    console.log("No trabajamos con ese metodo de pago!");
-    break;
-}
- */
-/* const tipoDescuento = () => {
-  do {
-    alert("No trabajamos ese metodo de pago!");
-  } while (
-    metodoPago != "efectivo" ||
-    metodoPago != "transferencia" ||
-    metodoPago != "tarjeta de credito"
-  );
-}; */
+let prod = new Producto("chelsea", 100000);
+mostradoresLista.push(prod);
 
-/*   while (
-    formaDePago === "Efectivo" ||
-    formaDePago === "Transferencia" ||
-    formaDePago === "Tarjeta de credito"
-  ) {
-    console.log(descuento) 
-*/
+let prod2 = new Producto("chester", 100000);
+mostradoresLista.push(prod2);
+
+let prod3 = new Producto("chester gold", 120000);
+mostradoresLista.push(prod3);
+
+let prod4 = new Producto("berlin", 120000);
+mostradoresLista.push(prod4);
+
+console.log(mostradoresLista);
