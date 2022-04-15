@@ -11,7 +11,7 @@ main {
   max-width: 280px;
   border-radius: 6px;
   box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.2);
-
+  margin-top: 1rem;
   cursor: pointer;
   transition-property: box-shadow;
   transition-duration: 0.3s;
