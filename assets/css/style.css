@@ -1,13 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
+
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: rgb(244, 224, 198);
+  max-width: 100%;
+  background-color: rgb(255, 242, 224);
   font-family: "Bodoni Moda", serif;
 }
 img {
@@ -19,39 +18,58 @@ svg {
 }
 
 .header {
-  text-align: center;
-  width: 100%;
-  background: linear-gradient(to left, rgb(251, 223, 150), lightgrey);
-  box-shadow: 0 0.9rem 1rem #797676;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center !important;
+  position: relative;
+  background: linear-gradient(
+    to left,
+    rgb(251, 223, 150),
+    lightgrey
+  ) !important;
+  box-shadow: 0 0.9rem 1rem #797676 !important;
 }
-.logo {
-  display: inline-table;
-  width: 60%;
+nav {
+  display: flex;
+
   padding: 20px;
   vertical-align: middle;
+  align-items: center;
 }
-.logo-inner {
-  text-align: center;
-  line-height: 100px;
-  color: rgb(38, 36, 36);
+.navbar-brand {
+  color: rgb(38, 36, 36) !important;
   cursor: default;
-  font-size: x-large;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
   font-style: italic;
 }
-.menu {
-  vertical-align: middle;
-  text-align: right;
+.offcanvas {
+  background: linear-gradient(to left, rgb(251, 223, 150), lightgrey);
+}
+.offcanvas-header {
+  font-family: "Bodoni Moda", serif !important;
+  font-style: italic;
+  font-weight: bold;
+}
+.btn-outline-success {
+  color: black;
+  border-color: black;
+}
+/* .menu {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
 }
 .menu-inner {
   padding: 0;
   margin: 0 20px;
   list-style: none;
-
   border-radius: 5px;
-  overflow: hidden;
-  display: none;
-  vertical-align: middle;
-  justify-content: space-around;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu-item + .menu-item {
   border-left: 1px solid #bbb;
@@ -63,16 +81,22 @@ svg {
   color: rgb(49, 47, 47);
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .menu-link:hover {
   background: none;
-}
+} */
 
+.bloque {
+  max-width: 100%;
+  position: relative;
+}
 .contenedor {
   max-width: 100%;
   margin: 0 auto;
+  margin-bottom: 0;
 }
-.bloque h1 {
+/* .bloque h1 {
   margin: 0px;
   text-align: justify;
   font-size: 50px;
@@ -89,7 +113,7 @@ svg {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
+} */
 
 .bloque h2 {
   font-size: 24px;
@@ -101,38 +125,38 @@ svg {
   margin-bottom: 50px;
 }
 .bloque.parallax {
-  height: 750px;
+  max-width: 100%;
+  height: 800px;
   background-position: 50% 50%; /*eje x eje y*/
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 .parallax.mostrador1 {
-  background-image: url(../imagenes/BlancoDorado3.JPG);
+  background-image: url(../imagenes/SeoulBlanco.JPG);
 }
 .parallax.mostrador2 {
   background-image: url(../imagenes/Golden.JPG);
 }
 .parallax.mostrador3 {
-  background-image: url(../imagenes/SeoulBlanco.JPG);
+  background-image: url(../imagenes/BlancoDorado1.JPG);
 }
 .medidas {
   text-decoration: overline;
 }
-@media (min-width: 768px) {
-  .header {
-    display: flex;
-    justify-content: center;
-  }
-  .menu-inner {
-    display: flex;
-    width: 100%;
-  }
-  .menu-item {
-    display: inline-flex;
-  }
-  .bloque h1 {
-    align-items: end;
-    font-size: 80px;
-  }
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+.menu-inner {
+  display: flex;
+  width: 100%;
+}
+.menu-item {
+  display: inline-flex;
+}
+.bloque h1 {
+  align-items: end;
+  font-size: 80px;
 }

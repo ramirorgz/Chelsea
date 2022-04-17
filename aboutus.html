@@ -22,28 +22,70 @@
   <body>
     <!--NAVBAR-->
     <div class="header">
-      <div class="logo">
-        <a class="logo-inner" href="index.html">Chelsea</a>
-        <div class="menu">
-          <ul class="menu-inner">
-            <li class="menu-item">
-              <a href="index.html" class="menu-link"> Inicio </a>
-            </li>
-            <li class="menu-item">
-              <a href="product.html" class="menu-link"> Nuestros productos </a>
-            </li>
-            <li class="menu-item">
-              <a href="FAQs.html" class="menu-link"> Preguntas frecuentes </a>
-            </li>
-            <li class="menu-item">
-              <a href="aboutus.html" class="menu-link"> Sobre nosotros </a>
-            </li>
-            <li class="menu-item">
-              <a href="envios.html" class="menu-link"> Envios </a>
-            </li>
-          </ul>
+      <nav class="navbar navbar-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Chelsea</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbarChelsea"
+            aria-controls="offcanvasNavbarChelsea"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbarChelsea"
+            aria-labelledby="offcanvasNavbarLabelChelsea"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabelChelsea">
+                Chelsea
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/product.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/aboutus.html">Sobre nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/envios.html">Envios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/FAQs.html">Preguntas frecuentes</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Buscar
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
-      </div>
+      </nav>
     </div>
     <!--MAIN-->
     <main>
@@ -82,7 +124,7 @@
               alt="BlancoTallerCarousel"
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
+              <h2>First slide label</h2>
               <p>
                 Some representative placeholder content for the first slide.
               </p>
@@ -95,7 +137,7 @@
               alt="CrudoTallerCarousel"
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
+              <h2>Second slide label</h2>
               <p>
                 Some representative placeholder content for the second slide.
               </p>
@@ -108,7 +150,7 @@
               alt="CrudoTallerCarousel2"
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
+              <h2>Third slide label</h2>
               <p>
                 Some representative placeholder content for the third slide.
               </p>
