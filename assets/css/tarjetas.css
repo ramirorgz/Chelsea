@@ -1,6 +1,5 @@
 main {
   display: grid;
-
   grid-gap: 1em;
 }
 
@@ -11,7 +10,6 @@ main {
   height: max-content;
   border-radius: 6px;
   box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.2);
-
   cursor: pointer;
   transition-property: box-shadow;
   transition-duration: 0.3s;

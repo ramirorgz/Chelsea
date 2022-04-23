@@ -160,3 +160,14 @@ nav {
   align-items: end;
   font-size: 80px;
 }
+/* Footer */
+
+.pie-pagina {
+  width: 100%;
+  background-color: #797676;
+}
+.pie-pagina.grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}

@@ -1,4 +1,4 @@
-//VARIABLES GLOBALES
+/* //VARIABLES GLOBALES
 let producto = prompt("Cual es el nombre del producto?");
 let precio = parseFloat(prompt("Cual es el precio del producto?"));
 const desc1 = (precio * 15) / 100;
@@ -15,6 +15,7 @@ if (isNaN(precio)) {
     `El precio final es de $${precio - desc2}, por pago en transferencia`
   );
   console.log(`El precio es $${precio} y puedes pagar hasta en 6 cuotas`);
+  
 }
 
 //CREANDO UN ARRAY DE PRODUCTOS
@@ -39,3 +40,4 @@ let prod4 = new Producto("berlin", 120000);
 mostradoresLista.push(prod4);
 
 console.log(mostradoresLista);
+ */
